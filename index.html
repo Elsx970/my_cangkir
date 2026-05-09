@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Cangkir! 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<!-- FLOATING BACKGROUND -->
+<div class="floaties" id="floaties"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-item active" id="nav-home">
+    <span class="icon">🏠</span><span>Home</span>
+  </a>
+  <a href="letter.html" class="nav-item " id="nav-letter">
+    <span class="icon">💌</span><span>Letter</span>
+  </a>
+  <a href="game.html" class="nav-item " id="nav-game">
+    <span class="icon">🐱</span><span>Game</span>
+  </a>
+  <a href="wishes.html" class="nav-item " id="nav-wishes">
+    <span class="icon">⭐</span><span>Wishes</span>
+  </a>
+</nav>
+\n<!-- PAGE: HOME -->\n<div class="page" id="page-home">
+  <div style="text-align:center; width:100%;">
+    <span class="hero-cake" id="cakebtn" onclick="cakeTap()">🎂</span>
+    <div class="hero-title">Happy Birthday!</div>
+    <div class="hero-sub">My Cangkir ☕</div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:1rem; color:#7c3aed; line-height:1.8; font-weight:600;">
+        Selamat ulang tahun, Cangkir! 🎉<br>
+        Semoga hari ini menyenangkan<br>
+        dan semua yang kamu mau
+        <span style="color:var(--text2); font-size:1.1rem;">bisa tercapai</span> ☕
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn" onclick="launchConfetti(); showFireworks()">🎊 Rayakan!</button>
+      <button class="btn secondary" onclick="showPage('letter')">💌 Baca Surat</button>
+    </div>
+    <div style="font-size:0.8rem; color:#be185d; margin-top:16px; font-weight:600; opacity:0.7;">
+      ✨ Ketuk kue untuk kejutan! ✨
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
